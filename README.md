@@ -1,4 +1,4 @@
-#Boilertplate react Lean Tech
+# Boilertplate react Lean Tech
 
 * Firebase (load all modules) firestore
 * Auth0
