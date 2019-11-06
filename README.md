@@ -1,5 +1,9 @@
 # Boilerplate react Lean Tech
 
+Framework CSS -> https://evergreen.segment.com/
+
+## Technologies
+
 * Firebase (load all modules) firestore
 * Auth0
 * errorBoundary
