@@ -1,0 +1,17 @@
+.withButtons {
+  width: 55%;
+  margin: 4px;
+}
+.sigin {
+  width: 70%;
+  margin: 24px 24px;
+  padding: 0%;
+}
+
+.margin-botton {
+  margin-bottom: 15px;
+}
+
+input {
+  margin: 4px;
+}
