@@ -1,9 +1,11 @@
 import React from "react";
+import ContentRouter from './../Router/contentRouter'
 
-function Main() {
-  return (
-    <div></div>
-  );
+export default class Main extends React.Component {
+
+  render(){
+    return (
+      <ContentRouter device={this.props.device} />
+    );
+  }
 }
-
-export default Main;

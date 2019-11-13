@@ -1,17 +1,14 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
-import Routes from './pages/Router';
+import PrincipalRouter from './pages/Router/principalRouter'
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div className={"root"}>
-        <Routes />
+export default class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <PrincipalRouter />
       </div>
-    </BrowserRouter>
-  );
+    );
+  }
 }
-
-export default App;
