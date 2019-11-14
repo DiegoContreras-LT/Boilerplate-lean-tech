@@ -8,12 +8,6 @@ const socialMediaProvider = {
 
 const auth = firebaseApp.auth();
 
-export const singInWithSocialMedia = provider => {
+export const singInWithSocialMedia = provider => auth.signInWithPopup(socialMediaProvider[provider]);
 
-    return auth.signInWithPopup(socialMediaProvider[provider]);
-
-};
-
-export const singInEmailAndPassword = ({email, password}) => {
-    return auth.signInWithEmailAndPassword(email, password);
-};
+export const singInEmailAndPassword = ({email, password}) => auth.signInWithEmailAndPassword(email, password);
