@@ -1,8 +1,8 @@
 import React from "react";
 import { Pane, Text, Avatar, Button, TextInput, Heading, Link } from "evergreen-ui";
 import "./styles.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 function Login() {
   return (
