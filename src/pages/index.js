@@ -51,7 +51,7 @@ export default class Screens extends Component {
   }
 
   isAuthenticated(){
-    return false;
+    return true;
   }
 
   render () {

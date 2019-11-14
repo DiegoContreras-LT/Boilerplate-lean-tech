@@ -42,4 +42,4 @@
             path: '/user/manage'
             }
         ]
-    }  
+    }
