@@ -1,8 +1,20 @@
 import React from "react";
-import { Pane, Text, Avatar, Button, TextInput, Heading, Link } from "evergreen-ui";
+import {
+  Pane,
+  Text,
+  Avatar,
+  Button,
+  TextInput,
+  Heading,
+  Link
+} from "evergreen-ui";
 import "./styles.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faGoogle, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
+
+const fbIcon = <FontAwesomeIcon className="icon" icon={faFacebookF} />;
+const gIcon = <FontAwesomeIcon className="icon" icon={faGoogle} />;
+const mIcon = <FontAwesomeIcon className="icon" icon={faMicrosoft} />;
 
 function Login() {
   return (
@@ -21,23 +33,57 @@ function Login() {
         name="Alan Turing"
         size={80}
       />
-      <Heading className="margin-botton" size={800} marginTop="default">Welcome!</Heading>
-      <TextInput name="text-input-name" placeholder="Email"/>
-      <TextInput name="text-input-password" placeholder="Password"/>      
-      <Link alignSelf="flex-end" href="#" color="neutral">Forgot your password?</Link>
-      <Button justifyContent="center" className="sigin" appearance="primary" intent="warning">
+      <Heading className="margin-botton" size={800} marginTop="default">
+        Welcome!
+      </Heading>
+      <TextInput name="text-input-name" placeholder="Email" />
+      <TextInput name="text-input-password" placeholder="Password" />
+      <Link alignSelf="flex-end" href="#" color="neutral">
+        Forgot your password?
+      </Link>
+      <Button
+        justifyContent="center"
+        className="sigin"
+        appearance="primary"
+        intent="warning"
+      >
         Sign in!
       </Button>
 
-      <Text className="margin-botton" size={400}>Or</Text>
-      <Button justifyContent="center" className="withButtons" appearance="primary">
-        Login with Facebook
+      <Text className="margin-botton" size={400}>
+        Or
+      </Text>
+      <Button
+        justifyContent="center"
+        className="withButtons"
+        appearance="primary"
+        iconBefore={fbIcon}
+      >
+        <span className="textfb">
+          Login with Facebook
+        </span>
       </Button>
-      <Button justifyContent="center" className="withButtons" appearance="primary" intent="danger">
-        Login with Google
+      <Button
+        justifyContent="center"
+        className="withButtons"
+        appearance="primary"
+        intent="danger"
+        iconBefore={gIcon}
+      >
+        <span className="textg">
+          Login with Google
+        </span>
       </Button>
-      <Button justifyContent="center" className="withButtons" appearance="primary" intent="success">
-        Login with Microsoft
+      <Button
+        justifyContent="center"
+        className="withButtons"
+        appearance="primary"
+        intent="success"
+        iconBefore={mIcon}
+      >
+        <span className="textm">
+          Login with Microsoft
+        </span>
       </Button>
     </Pane>
   );

@@ -1,6 +1,9 @@
 .withButtons {
-  width: 55%;
+  width: 63%;
   margin: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
 }
 .sigin {
   width: 70%;
@@ -14,4 +17,19 @@
 
 input {
   margin: 4px;
+}
+
+.icon {
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+
+.textfb {
+  margin-left: 10px;
+}
+.textg {
+  margin-left: 4px;
+}
+.textm {
+  margin-left: 7px;
 }
