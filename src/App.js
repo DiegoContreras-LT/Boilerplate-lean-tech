@@ -1,14 +1,11 @@
 import React from "react";
-import PrincipalRouter from "./pages/Router/principalRouter";
-import "./App.css";
+import {BrowserRouter} from "react-router-dom";
+import Routes from "./pages/Router";
 
-export default class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <PrincipalRouter/>
-            </div>
-        );
-    }
-}
+const App = () => (
+    <BrowserRouter>
+        <Routes/>
+    </BrowserRouter>
+);
 
+export default App;

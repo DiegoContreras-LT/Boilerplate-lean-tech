@@ -1,16 +1,16 @@
 const DARK_THEME = {
-    primaryColor:'red',
+    primaryColor: 'red',
 };
 
 const LIGHT_THEME = {
-    primaryColor:'blue',
+    primaryColor: 'blue',
 };
 
 const DEFAULT_THEME = {
-    primaryColor:'yellow',
+    primaryColor: 'yellow',
 };
 
-export const THEMES = {
+const THEMES = {
     DARK_THEME,
     LIGHT_THEME,
     DEFAULT_THEME

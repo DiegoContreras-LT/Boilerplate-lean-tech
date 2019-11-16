@@ -1,45 +1,16 @@
-/**
- * Routes for the content routing used in ContentRouter component
- */
-    export const ContentRoutes = {
-        Users: '/users',
-        Test: '/test'
-    }
-  
-/**
- * Routes for the content routing used in PrincipalRouter component
- */
-    export const PrincipalRoutes = {
-        Login: '/login',
-        Register: '/register',
-        CreateAccount: '/create-account',
-        ForgotPassword: '/forgot-password',
-        Account: '/account',
-        Screens: '/'
-    }
+import React from 'react';
+import {Switch} from "react-router-dom";
+import PrivateRoute from './PrivateRoute';
+import PublicRoute from './PublicRoute';
 
-/**
- * Account routes
- */
-    export const AccountRoutes = {
-        Profile: '/account/profile',
-        Preferences: '/account/preferences'
-    }
+const Login = () => (<h1>LOGIN</h1>);
+const Dashboard = () => (<h1>DASHBOARD</h1>);
 
-/**
- * Nav routes
- */
-    export const NavLinksPaths = {
-        users: [
-            {
-            text: 'Users',
-            label: 'user',
-            path: '/user'
-            },
-            {
-            text: 'Manage User',
-            label: 'manageUser',
-            path: '/user/manage'
-            }
-        ]
-    }
+const Routes = () => (
+    <Switch>
+        <PublicRoute path={'/login'} component={Login}/>
+        <PrivateRoute exact path={'/'} component={Dashboard}/>
+    </Switch>
+);
+
+export default Routes;

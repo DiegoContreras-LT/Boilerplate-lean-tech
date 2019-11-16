@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
 
 const auth = true;
-export default ({component: Component, ...rest}) => {
+const PrivateRoute = ({component: Component, ...rest}) => {
     return (
         <Route {...rest}
                render={
@@ -10,4 +10,6 @@ export default ({component: Component, ...rest}) => {
                        : <Redirect to={'/login'}/>}
         />);
 }
+
+export default PrivateRoute;
 

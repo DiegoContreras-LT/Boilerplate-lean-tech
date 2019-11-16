@@ -1,15 +1,15 @@
 import {useEffect, useState} from "react";
-import {breakPoint} from "../env";
+import {breakPoints} from "../utils/config";
 
 export const useDevice = () => {
     const [device, setDevice] = useState(null);
 
     const updateDimensions = () => {
         let _device = 'desktop';
-        if (window.innerWidth <= breakPoint.DESKTOP)
+        if (window.innerWidth <= breakPoints.DESKTOP)
             _device = 'table';
 
-        if (window.innerWidth <= breakPoint.TABLET)
+        if (window.innerWidth <= breakPoints.TABLET)
             _device = 'phone';
 
         setDevice(_device);

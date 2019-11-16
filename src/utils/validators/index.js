@@ -13,7 +13,7 @@ export function emailValidator(email) {
     if (isValid) {
         return true;
     } else {
-        return {isValid, message};        
+        return {isValid, message};
     }
 }
 
