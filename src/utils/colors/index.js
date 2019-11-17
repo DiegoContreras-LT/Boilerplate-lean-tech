@@ -10,7 +10,7 @@ const DEFAULT_THEME = {
     primaryColor: 'yellow',
 };
 
-const THEMES = {
+export const THEMES = {
     DARK_THEME,
     LIGHT_THEME,
     DEFAULT_THEME
