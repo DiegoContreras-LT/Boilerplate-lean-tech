@@ -4,7 +4,7 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
 const Login = () => (<h1>LOGIN</h1>);
-const Dashboard = () => (<h1>DASHBOARD</h1>);
+const Dashboard = () =>(<h1>DASHBOARD</h1>);
 
 const Routes = () => (
     <Switch>

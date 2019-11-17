@@ -9,7 +9,7 @@ import {store, persist} from "./redux/store";
 
 ReactDOM.render(
     <Provider store={store}>
-        <PersistGate persistor={persist}>
+        <PersistGate persistor={persist} loading={<h1>loading</h1>}>
             <App/>
         </PersistGate>
     </Provider>

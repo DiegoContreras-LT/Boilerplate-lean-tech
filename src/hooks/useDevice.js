@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {breakPoints} from "../utils/config";
+import {breakPoints} from "../config";
 
 export const useDevice = () => {
     const [device, setDevice] = useState(null);
