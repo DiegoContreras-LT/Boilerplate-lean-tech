@@ -7,7 +7,6 @@ import { ThemeTwoContext } from "../../components/ThemeProvider";
 import { useTheme } from "../../components/ThemeProvider";
 import styled from "styled-components";
 import { ThemeContext, ThemeConsumer as ThemeDefault } from "styled-components";
-import { Text } from "./../../components/default/Text";
 
 const LoginWithTheme = styled.div`
   background: ${({ theme }) => theme.theme.primaryColor};
@@ -38,16 +37,6 @@ const Dashboard = () => (
       return (
         <>
           <h1>Dashboard</h1>
-          <Text
-            avoid
-            contentKey={'test'}
-            fontFamily={"TEXT"}
-            fontStyle={"NORMAL"}
-            fontWeight={"BOLD"}
-            fontColor={"textColor"}
-            fontSize={"20px"}
-            content={'Test'}
-          />
         </>
       );
     }}
