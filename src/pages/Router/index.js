@@ -7,6 +7,8 @@ import { ThemeTwoContext } from "../../components/ThemeProvider";
 import { useTheme } from "../../components/ThemeProvider";
 import styled from "styled-components";
 import { ThemeContext, ThemeConsumer as ThemeDefault } from "styled-components";
+import { Text } from "./../../components/default/Text";
+import {ImageNotDraggable} from './../../components/default/ImageNotDraggable'
 
 const LoginWithTheme = styled.div`
   background: ${({ theme }) => theme.theme.primaryColor};
