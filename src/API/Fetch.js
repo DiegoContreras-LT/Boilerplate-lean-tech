@@ -1,30 +1,18 @@
 import axios from 'axios'
 
-/**
- * Method used to handle API requests
- * 
- * @param method
- * @param endpoint
- * @param params
- * @param url
- * @returns {Promise<unknown>}
- * @constructor
- */
-export const FETCH = (method, endpoint, params = {}, url = null) => {
-  const BASE_URL = 'http:/';
-  const Authorization = localStorage.getItem('token');
-  const URL = url || `${BASE_URL}${endpoint}`;
+export const FETCH = (method, endpoint, payload = {}, url = null) => {
+  const URL = url || `${process.env.REACT_APP_BASE_URL}${endpoint}`;
+
   const instance = axios.create({
     headers: {
-      'content-type': 'application/json',
-      Authorization
+      'content-type': 'application/json'
     }
   });
 
   return new Promise(async (resolve, reject) => {
     if (instance[method.toLocaleLowerCase()]) {
       try {
-        const response = await instance[method](URL, params);
+        const response = await instance[method](URL, payload);
         return resolve(response);
       } catch (error) {
           return reject(error);
