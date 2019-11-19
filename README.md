@@ -1,35 +1,35 @@
 # Boilerplate react Lean Tech
 
-Framework CSS -> https://evergreen.segment.com/
+Framework CSS -> (https://evergreen.segment.com/, material UI) 50%
 
 ## Technologies
 
-* Firebase (load all modules) firestore
-* Auth0
-* errorBoundary
-* errors (403,404,401,408,500)
-* error log (backend)
-* support tickes
-* satisfaction dialog
-* analytics by Google
-* push notification with firebase and pusher
-* redux  redux saga || thunk || reselect
-* axios
-* moment (format file)
-* validatator file
-* Lang file
-* Theme application
-* Component text generic
-* Componect icon imagen no dragable
-* Switch component 
-* Opcional typeScript
-* formik
-* yup
-* service REST 
-* Graphql 
-* React-cookies
-* Redux-persistor
-* despliegue continuo (Now, Heroku, AWS).
+* Firebase (load all modules) (firestore,auth) 50%
+* Auth0 (pending) 
+* errorBoundary (components) 70%
+* errors (403,404,401,408,500) 0%
+* error log (firebase) 0%
+* support tickets 0% 
+* satisfaction dialog pending
+* analytics by Google pending
+* push notification with firebase and pusher pending
+* redux  redux saga 70%
+* axios 100%
+* moment (format file) pending
+* validatator file 0%
+* Lang file 0%
+* Theme application 70%
+* Component text generic 0%
+* Componect icon/image not draggable 0%
+* Switch component 70%
+* Opcional typeScript pending
+* formik pending
+* yup pending
+* service REST 50%
+* Graphql pending
+* React-cookies pending
+* Redux-persistor 70%
+* despliegue continuo (Now, Heroku, AWS). 0%
 [
   * _Blank
   *_ Left_navbar
