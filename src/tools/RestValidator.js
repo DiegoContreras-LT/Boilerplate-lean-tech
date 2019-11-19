@@ -1,5 +1,7 @@
 /**
- * 
+ * Method used to handle API responses,
+ * validating data and datatypes possible errors
+ *  
  * @param data 
  * @param dataType 
  */
@@ -16,5 +18,5 @@ export const RestValidator = (data, dataType) => {
       msg: 'The response is not an object'
     }
   }
-  
+    
 }

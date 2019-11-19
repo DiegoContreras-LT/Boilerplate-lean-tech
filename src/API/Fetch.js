@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 /**
+ * Method used to handle API requests
  * 
  * @param method
  * @param endpoint
