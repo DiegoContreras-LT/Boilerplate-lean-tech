@@ -44,7 +44,7 @@ const Dashboard = () => (
             fontFamily={"TEXT"}
             fontStyle={"NORMAL"}
             fontWeight={"BOLD"}
-            fontColor={"black"}
+            fontColor={"textColor"}
             fontSize={"20px"}
             content={'Test'}
           />

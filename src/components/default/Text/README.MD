@@ -17,6 +17,10 @@ This component works to be as customizable as possible. You can pass an in-line 
 ~~~javascript
 <Text
     avoid
+    style={{
+        //Any style that you want to add
+        //To change anything referred to the font do it by the props of below
+    }}
     contentKey={'test'}
     fontFamily={"TEXT"}
     fontStyle={"NORMAL"}
