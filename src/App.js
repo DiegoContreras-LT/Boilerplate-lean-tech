@@ -1,14 +1,14 @@
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import Routes from "./pages/Router";
-import {ProviderTheme} from "./components/ThemeProvider";
+import {ThemeToggleProvider} from "./components/ThemeToggle";
 
 const App = () => (
-    <ProviderTheme>
+    <ThemeToggleProvider>
         <BrowserRouter>
             <Routes/>
         </BrowserRouter>
-    </ProviderTheme>
+    </ThemeToggleProvider>
 );
 
 export default App;
