@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {DisplayError} from "../components/default/DieplayError";
+import {DisplayError} from "../components/default/DisplayError";
 
 const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
 
-export const WithErrorBoundary = WrappedComponent => {
+export const withErrorBoundary = WrappedComponent => {
     class WithErrorBoundary extends Component {
         state = {
             error: null,
