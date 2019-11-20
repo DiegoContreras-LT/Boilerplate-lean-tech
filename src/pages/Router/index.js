@@ -4,6 +4,7 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import styled from "styled-components";
 import {withThemeToggle, useToggleTheme, ThemeToggleConsumer} from "../../components/ThemeToggle";
+import Layout from '../../pages/Layout';
 
 
 const LoginWithTheme = styled.div`
@@ -63,6 +64,7 @@ const Routes = () => (
         <PrivateRoute exact path={'/sing'} component={Login}/>
         <PrivateRoute exact path={'/other'} component={Other}/>
         <PrivateRoute exact path={'/theme'} component={Theme}/>
+        <PrivateRoute exact path={'/test'} component={Layout} />
     </Switch>
 );
 
