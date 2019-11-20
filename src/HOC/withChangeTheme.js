@@ -3,7 +3,7 @@ import {getTheme, setTheme} from "../utils/Colors";
 
 const getDisplayName = WrapperComponent => WrapperComponent.displayName || WrapperComponent.name || 'component';
 
-export const WithChangeTheme = WrapperComponent => {
+export const withChangeTheme = WrapperComponent => {
     class WithChangeTheme extends Component {
         state = {
             theme: getTheme(),

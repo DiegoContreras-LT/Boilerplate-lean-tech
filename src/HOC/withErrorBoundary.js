@@ -3,7 +3,7 @@ import {DisplayError} from "../components/default/DieplayError";
 
 const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
 
-export const WithErrorBoundary = WrappedComponent => {
+export const withErrorBoundary = WrappedComponent => {
     class WithErrorBoundary extends Component {
         state = {
             error: null,
