@@ -22,7 +22,7 @@ export const withChangeTheme = WrapperComponent => {
     }
 
 
-    WithChangeTheme.displayName = `WithChangeTheme(${getDisplayName(WrapperComponent)})`;
+    WithChangeTheme.displayName = `withChangeTheme(${getDisplayName(WrapperComponent)})`;
 
     return WithChangeTheme;
 };

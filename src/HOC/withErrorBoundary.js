@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {DisplayError} from "../components/default/DieplayError";
+import {DisplayError} from "../components/default/DisplayError";
 
 const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
 
