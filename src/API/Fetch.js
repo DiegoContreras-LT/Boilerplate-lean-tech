@@ -10,9 +10,10 @@ export const FETCH = (method, endpoint, payload = {}, url = null) => {
   });
 
   return new Promise(async (resolve, reject) => {
-    if (instance[method.toLocaleLowerCase()]) {
+    const _method = method.toLocaleLowerCase() 
+    if (instance[_method]) {
       try {
-        const response = await instance[method](URL, payload);
+        const response = await instance[_method](URL, payload);
         return resolve(response);
       } catch (error) {
           return reject(error);
