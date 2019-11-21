@@ -10,8 +10,8 @@ import {
 } from "evergreen-ui";
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faGoogle, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 
+import { faFacebookF, faGoogle, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 const fbIcon = <FontAwesomeIcon className="icon" icon={faFacebookF} />;
 const gIcon = <FontAwesomeIcon className="icon" icon={faGoogle} />;
 const mIcon = <FontAwesomeIcon className="icon" icon={faMicrosoft} />;
@@ -70,7 +70,7 @@ function Login() {
         intent="danger"
         iconBefore={gIcon}
       >
-        <span className="textg">
+        <span className="textg" >
           Login with Google
         </span>
       </Button>

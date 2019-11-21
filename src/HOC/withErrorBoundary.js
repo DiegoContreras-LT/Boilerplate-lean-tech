@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {DisplayError} from "../components/default/DisplayError";
-
-const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
+import {getDisplayName} from "../utils/Config/helpers";
 
 export const withErrorBoundary = WrappedComponent => {
     class WithErrorBoundary extends Component {
@@ -16,7 +15,6 @@ export const withErrorBoundary = WrappedComponent => {
 
         render() {
             const {error} = this.state;
-
             return (
                 error ? <DisplayError {...this.state}/>
                     : <WrappedComponent {...this.props}/>

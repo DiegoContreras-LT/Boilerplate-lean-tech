@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {getTheme, setTheme} from "../utils/Colors";
-
-const getDisplayName = WrapperComponent => WrapperComponent.displayName || WrapperComponent.name || 'component';
+import {getTheme, setTheme} from "../utils/colors";
+import {getDisplayName} from "../utils/Config/helpers";
 
 export const withChangeTheme = WrapperComponent => {
     class WithChangeTheme extends Component {
@@ -11,7 +10,7 @@ export const withChangeTheme = WrapperComponent => {
 
         changeTheme = theme => {
             setTheme(theme);
-            this.setState({theme: theme});
+            this.setState({theme: getTheme()});
         };
 
         render() {
