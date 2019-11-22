@@ -5,6 +5,7 @@ export class Item {
   async saveItem(payload) {
     try {
       const response = FETCH('post', itemRoutes.saveItem, payload)
+      //validate data before returning response
       return response
     } catch (error) {
       return error;
@@ -14,6 +15,7 @@ export class Item {
   async getItems() {
    try {
      const response = FETCH('get', itemRoutes.getItems)
+     //validate data before returning response
      return response
    } catch (error) {
      return error
@@ -23,6 +25,7 @@ export class Item {
   async getItem(payload) {
     try {
       const response = FETCH('get', itemRoutes.getItem, payload)
+      //validate data before returning response
       return response
     } catch (error) {
       return error
@@ -32,6 +35,7 @@ export class Item {
    async deleteItem(payload) {
     try {
       const response = FETCH('delete', itemRoutes.deleteItem, payload)
+      //validate data before returning response
       return response
     } catch (error) {
       return error
@@ -41,6 +45,7 @@ export class Item {
    async updateItem(payload) {
     try {
       const response = FETCH('put', itemRoutes.updateItem, payload)
+      //validate data before returning response
       return response
     } catch (error) {
       return error
