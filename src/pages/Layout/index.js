@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import {storeItem} from "../../environment/firebase/firestore/index";
+import {getItem} from "../../environment/firebase/firestore/index";
 import { Button } from "evergreen-ui";
 
-const eventButton = () => { 
-    let toStore = {name: 'new NAME', description: 'new DESCRIPTION'};
-    storeItem(toStore, 'test-collection');
+const eventButton = async () => {
+    const abc = await getItem('test-collection', '1234erfcx');
+    console.log(abc);
 }
 
 const Layout = () => (
