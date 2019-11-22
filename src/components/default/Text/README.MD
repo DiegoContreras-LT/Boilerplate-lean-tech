@@ -11,6 +11,7 @@ This component works to be as customizable as possible. You can pass an in-line 
 -fontSize: set the font-size of the text content
 -contentKey: set the Text content unique key. This is used to automatically transalate one text to another
 -content: set the Text content
+-title: set the title to be shown when the text component is hover
 -avoid: A boolean to indicated if this text content should be registered in the file with all the texts of the application
 
 ### Example
@@ -22,6 +23,7 @@ This component works to be as customizable as possible. You can pass an in-line 
         //Any style that you want to add
         //To change anything referred to the font do it by the props of below
     }}
+    title={'title'}
     contentKey={'test'}
     fontFamily={"TEXT"}
     fontStyle={"NORMAL"}
