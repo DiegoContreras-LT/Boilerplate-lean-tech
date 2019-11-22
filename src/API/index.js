@@ -1,6 +1,7 @@
-class API {
+import { Item } from './services/Item'
 
+class API {
+  itemService = new Item()
 }
 
-export default new API();
-
+export default new API()
