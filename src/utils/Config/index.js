@@ -10,7 +10,7 @@ export const firebaseConfig = {
     appId: process.env.REACT_APP_APP_ID,
 };
 
-export const breakPoint = {
+export const breakPoints = {
     PHONE: 576,
     TABLET: 829,
     DESKTOP: 1200

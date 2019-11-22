@@ -1,3 +1,5 @@
+import {loadStorage, saveStorage} from "../../tools/storage";
+
 const DARK_THEME = {
     primaryColor: 'red',
     textColor:'white'
@@ -19,3 +21,15 @@ export const THEMES = {
     DEFAULT_THEME
 };
 
+export const getTheme = () => {
+
+    const currentTheme = loadStorage('theme');
+
+    if (!THEMES[currentTheme]) {
+        saveStorage('DEFAULT_THEME','theme');
+    }
+
+    return THEMES[currentTheme || 'DEFAULT_THEME']
+};
+
+export const setTheme = theme => saveStorage(theme, 'theme');
