@@ -1,11 +1,11 @@
 import React from 'react';
+import {ErrorContainer, ErrorTitle, ErrorMessage} from './styles'
 
 export const DisplayError = ({error, errorInfo}) => {
     return (
-        <div>
-            <h1>Error ...</h1>
-            <p>{error.toString()}</p>
-            <p>{errorInfo.componentStack}</p>
-        </div>
+        <ErrorContainer>
+            <ErrorTitle>sorry something went wrong</ErrorTitle>
+            <ErrorMessage>{error.toString()}</ErrorMessage>
+        </ErrorContainer>
     )
 };
