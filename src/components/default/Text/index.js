@@ -1,16 +1,22 @@
 import React from 'react'
 import {Paragraph} from './styles'
-import {ArrayString} from './../../../utils/keys'
+import {ArrayString} from './../../../tools/keys'
+import {withChangeTheme} from './../../../HOC/withChangeTheme'
 
-export const Text = (props) => {
+//Please read the README.md file to see the details documentation
+
+export const TextComponent = (props) => {
 
     ArrayString(props.contentKey, props.content, props.avoid)
-    
+
     return (
        <Paragraph 
-       title={props.title ? props.title : props.Text} 
+       className={props.className ? props.className : ''}
+       title={props.title ? props.title : props.content} 
        {...props}>
            {props.content}
        </Paragraph>
     )
 }
+
+export const Text = withChangeTheme(TextComponent)

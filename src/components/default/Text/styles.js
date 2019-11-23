@@ -7,5 +7,5 @@ export const Paragraph = styled.h1`
     font-weight:${props=>FontWeight[props.fontWeight]};
     font-style:${props=>FontStyle[props.fontStyle]};
     font-size:${props=>props.fontSize};
-    color:${props=>props.theme.theme[props.fontColor]};
+    color:${props=>props.theme[props.fontColor]};
 `
