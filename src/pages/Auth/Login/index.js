@@ -8,7 +8,6 @@ import {
   Heading,
   Link
 } from "evergreen-ui";
-// import {Text as CustomText} from './../../../components/default/Text'
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -50,21 +49,6 @@ function Login() {
       >
         Sign in!
       </Button>
-
-      {/* <CustomText
-        avoid
-        style={{
-            //Any style that you want to add
-            //To change anything referred to the font do it by the props of below
-        }}
-        contentKey={'test'}
-        fontFamily={"TEXT"}
-        fontStyle={"NORMAL"}
-        fontWeight={"BOLD"}
-        fontColor={"primaryColor"}
-        fontSize={"20px"}
-        content={'Test'}
-      /> */}
       <Text className="margin-botton" size={400}>
         Or
       </Text>

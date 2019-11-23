@@ -1,7 +1,9 @@
 import React from 'react'
 import {Paragraph} from './styles'
-import {ArrayString} from './../../../utils/keys'
+import {ArrayString} from './../../../tools/keys'
 import {withChangeTheme} from './../../../HOC/withChangeTheme'
+
+//Please read the README.md file to see the details documentation
 
 export const TextComponent = (props) => {
 
@@ -9,6 +11,7 @@ export const TextComponent = (props) => {
 
     return (
        <Paragraph 
+       className={props.className ? props.className : ''}
        title={props.title ? props.title : props.content} 
        {...props}>
            {props.content}
