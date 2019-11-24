@@ -4,7 +4,7 @@ import { itemRoutes } from '../routes/item'
 export class Item {
   async add(payload) {
     try {
-      const response = FETCH('post', itemRoutes.add, payload)
+      const response = await FETCH('post', itemRoutes.add, payload)
       //validate data before returning response
       return response
     } catch (error) {
@@ -15,7 +15,7 @@ export class Item {
 
   async get() {
    try {
-     const response = FETCH('get', itemRoutes.get)
+     const response = await FETCH('get', itemRoutes.get)
      //validate data before returning response
      return response
    } catch (error) {
@@ -26,7 +26,7 @@ export class Item {
 
   async find(payload) {
     try {
-      const response = FETCH('get', itemRoutes.item, payload)
+      const response = await FETCH('get', itemRoutes.item, payload)
       //validate data before returning response
       return response
     } catch (error) {
@@ -37,7 +37,7 @@ export class Item {
 
    async delete(payload) {
     try {
-      const response = FETCH('delete', itemRoutes.item, payload)
+      const response = await FETCH('delete', itemRoutes.item, payload)
       //validate data before returning response
       return response
     } catch (error) {
@@ -48,7 +48,7 @@ export class Item {
 
    async update(payload) {
     try {
-      const response = FETCH('put', itemRoutes.item, payload)
+      const response = await FETCH('put', itemRoutes.item, payload)
       //validate data before returning response
       return response
     } catch (error) {
