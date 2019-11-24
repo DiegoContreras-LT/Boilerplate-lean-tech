@@ -3,7 +3,7 @@ export const loadStorage = (key = 'root-storage') => {
         const storage = localStorage.getItem(key);
         return storage === null ? undefined : JSON.parse(storage);
     } catch (error) {
-        throw new Error(`fail load storage ${error}`);
+        return undefined;
     }
 };
 

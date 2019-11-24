@@ -2,52 +2,57 @@ import { FETCH } from '../fetch'
 import { itemRoutes } from '../routes/item'
 
 export class Item {
-  async saveItem(payload) {
+  async add(payload) {
     try {
-      const response = FETCH('post', itemRoutes.saveItem, payload)
+      const response = FETCH('post', itemRoutes.add, payload)
       //validate data before returning response
       return response
     } catch (error) {
+      //Add log error before returning error
       return error;
     }
   }
 
-  async getItems() {
+  async get() {
    try {
-     const response = FETCH('get', itemRoutes.getItems)
+     const response = FETCH('get', itemRoutes.get)
      //validate data before returning response
      return response
    } catch (error) {
+      //Add log error before returning error
      return error
    } 
   }
 
-  async getItem(payload) {
+  async find(payload) {
     try {
-      const response = FETCH('get', itemRoutes.getItem, payload)
+      const response = FETCH('get', itemRoutes.item, payload)
       //validate data before returning response
       return response
     } catch (error) {
+      //Add log error before returning error
       return error
     } 
    }
 
-   async deleteItem(payload) {
+   async delete(payload) {
     try {
-      const response = FETCH('delete', itemRoutes.deleteItem, payload)
+      const response = FETCH('delete', itemRoutes.item, payload)
       //validate data before returning response
       return response
     } catch (error) {
+      //Add log error before returning error
       return error
     } 
    }
 
-   async updateItem(payload) {
+   async update(payload) {
     try {
-      const response = FETCH('put', itemRoutes.updateItem, payload)
+      const response = FETCH('put', itemRoutes.item, payload)
       //validate data before returning response
       return response
     } catch (error) {
+      //Add log error before returning error
       return error
     } 
    }
