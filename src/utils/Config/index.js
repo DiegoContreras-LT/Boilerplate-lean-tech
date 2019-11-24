@@ -15,3 +15,5 @@ export const breakPoints = {
     TABLET: 829,
     DESKTOP: 1200
 };
+
+export const switchDevice = false
