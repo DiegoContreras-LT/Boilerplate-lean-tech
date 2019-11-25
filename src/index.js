@@ -7,6 +7,7 @@ import {Provider} from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import {store, persist} from "./redux/store";
 
+
 ReactDOM.render(
     <Provider store={store}>
         <PersistGate persistor={persist} loading={<h1>loading</h1>}>

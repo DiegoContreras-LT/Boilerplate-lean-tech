@@ -28,6 +28,7 @@ export class Item {
       //validate data before returning response
       return response
     } catch (error) {
+        //validate error log
       return error
     } 
    }
