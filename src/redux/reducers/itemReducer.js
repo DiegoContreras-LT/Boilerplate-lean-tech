@@ -9,10 +9,10 @@ const initialState = {
 
 export default function user(state = initialState, {type, payload}) {
   switch (type) {
-    case itemActionTypes.ADD_ITEM_LOADING:
-    case itemActionTypes.DELETE_ITEM_LOADING:
-    case itemActionTypes.UPDATE_ITEM_LOADING:
-    case itemActionTypes.GET_ITEMS_LOADING:
+    case itemActionTypes.ADD_ITEM_REQUEST:
+    case itemActionTypes.DELETE_ITEM_REQUEST:
+    case itemActionTypes.UPDATE_ITEM_REQUEST:
+    case itemActionTypes.GET_ITEMS_REQUEST:
       return {
         ...state,
         loading: true

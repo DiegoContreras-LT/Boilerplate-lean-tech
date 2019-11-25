@@ -1,7 +1,8 @@
 import { itemActionTypes } from '../actionTypes/item'
 
-export const addItem = () => ({
-  type: itemActionTypes.ADD_ITEM_LOADING
+export const addItem = payload => ({
+  type: itemActionTypes.ADD_ITEM_REQUEST,
+  payload
 })
 
 export const addItemSuccess = payload => ({
@@ -14,8 +15,9 @@ export const addItemError = payload => ({
   payload
 })
 
-export const deleteItem = () => ({
-  type: itemActionTypes.DELETE_ITEM_LOADING
+export const deleteItem = payload => ({
+  type: itemActionTypes.DELETE_ITEM_REQUEST,
+  payload
 })
 
 export const deleteItemSuccess = payload => ({
@@ -28,8 +30,9 @@ export const deleteItemError = payload => ({
   payload
 })
 
-export const updateItem = () => ({
-  type: itemActionTypes.UPDATE_ITEM_LOADING
+export const updateItem = payload => ({
+  type: itemActionTypes.UPDATE_ITEM_REQUEST,
+  payload
 })
 
 export const updateItemSuccess = payload => ({
@@ -43,7 +46,7 @@ export const updateItemError = payload => ({
 })
 
 export const getItems = () => ({
-  type: itemActionTypes.GET_ITEMS_LOADING
+  type: itemActionTypes.GET_ITEMS_REQUEST
 })
 
 export const getItemsSuccess = payload => ({
