@@ -4,32 +4,32 @@ Framework CSS -> (https://evergreen.segment.com/, material UI) 50%
 
 ## Technologies
 
-* Firebase (load all modules) (firestore,auth) 50%
-* Auth0 (pending) 
-* errorBoundary (components) 70%
-* errors (403,404,401,408,500) 0%
-* error log (firebase) 0%
-* support tickets 0% 
-* satisfaction dialog pending
-* analytics by Google pending
-* push notification with firebase and pusher pending
-* redux  redux saga 70%
+* errorBoundary (components) 100%
+* Redux-persistor 100%
+* service REST 100%
+* redux  redux saga 100%
 * axios 100%
-* moment (format file) pending
+* Theme application 100%
+* Component text generic 100%
+* Componect icon/image not draggable 100%
+* Switch component 100%
+* error log (firebase) 70%
+* support tickets 70% 
+* Firebase (load all modules) (firestore,auth) 50%
 * validatator file 0%
 * Lang file 0%
-* Theme application 70%
-* Component text generic 0%
-* Componect icon/image not draggable 0%
-* Switch component 70%
+* moment (format file) pending
 * Opcional typeScript pending
 * formik pending
 * yup pending
-* service REST 50%
+* satisfaction dialog pending
+* analytics by Google pending
+* push notification with firebase and pusher pending
 * Graphql pending
 * React-cookies pending
-* Redux-persistor 70%
-* despliegue continuo (Now, Heroku, AWS). 0%
+* despliegue continuo (Now, Heroku, AWS). pending
+* errors (403,404,401,408,500) pending
+* Auth0 (pending) 
 [
   * _Blank
   *_ Left_navbar
