@@ -17,3 +17,5 @@ export const singInWithSocialMedia = provider => {
 };
 
 export const singInEmailAndPassword = ({email, password}) => auth.signInWithEmailAndPassword(email, password);
+
+export const singOut = () => auth.signOut()

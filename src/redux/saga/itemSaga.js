@@ -3,9 +3,8 @@ import { itemActionTypes } from '../actionTypes/item'
 import * as itemActions from '../actions/item'
 import API from '../../API'
 
-function* addItem(payload) {
+function* addItem({payload}) {
   try {
-    yield put (itemActions.saveItem())
     const response = yield call(API.itemService.add, payload)
     yield put (itemActions.addItemSuccess(response.data))
   } catch (error) {
@@ -14,12 +13,11 @@ function* addItem(payload) {
 }
 
 function* addItemLoading() {
-  yield takeEvery (itemActionTypes.ADD_ITEM_LOADING, addItem)
+  yield takeEvery (itemActionTypes.ADD_ITEM_REQUEST, addItem)
 }
 
-function* deleteItem(payload) {
+function* deleteItem({payload}) {
   try {
-    yield put (itemActions.deleteItem())
     const response = yield call(API.itemService.delete, payload)
     yield put (itemActions.deleteItemSuccess(response.data))
   } catch (error) {
@@ -28,12 +26,11 @@ function* deleteItem(payload) {
 }
 
 function* deleteItemLoading() {
-  yield takeEvery (itemActionTypes.DELETE_ITEM_LOADING, deleteItem)
+  yield takeEvery (itemActionTypes.DELETE_ITEM_REQUEST, deleteItem)
 }
 
-function* updateItem(payload) {
+function* updateItem({payload}) {
   try {
-    yield put (itemActions.updateItem())
     const response = yield call(API.itemService.update, payload)
     yield put (itemActions.updateItemSuccess(response.data))
   } catch (error) {
@@ -42,12 +39,11 @@ function* updateItem(payload) {
 }
 
 function* updateItemLoading() {
-  yield takeEvery (itemActionTypes.UPDATE_ITEM_LOADING, updateItem)
+  yield takeEvery (itemActionTypes.UPDATE_ITEM_REQUEST, updateItem)
 }
 
-function* getItems(payload) {
+function* getItems() {
   try {
-    yield put (itemActions.getItems())
     const response = yield call(API.itemService.get)
     yield put (itemActions.getItemsSuccess(response.data))
   } catch (error) {
@@ -56,7 +52,7 @@ function* getItems(payload) {
 }
 
 function* getItemsLoading() {
-  yield takeEvery (itemActionTypes.GET_ITEMS_LOADING, getItems)
+  yield takeEvery (itemActionTypes.GET_ITEMS_REQUEST, getItems)
 }
 
 export default function* itemSaga() {
