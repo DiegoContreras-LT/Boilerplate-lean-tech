@@ -1,6 +1,6 @@
 # Boilerplate react Lean Tech
 
-Framework CSS -> (https://evergreen.segment.com/, material UI) 50%
+Framework CSS -> (https://evergreen.segment.com/, material UI) 100%
 
 ## Technologies
 
@@ -13,6 +13,7 @@ Framework CSS -> (https://evergreen.segment.com/, material UI) 50%
 * Component text generic 100%
 * Componect icon/image not draggable 100%
 * Switch component 100%
+
 * error log (firebase) 70%
 * support tickets 70% 
 * Firebase (load all modules) (firestore,auth) 50%
