@@ -6,7 +6,7 @@ import Login from "../auth/login";
 
 const Routes = () => (
     <Switch>
-        <PrivateRoute path={'/'} component={Login}/>
+        <PublicRoute path={'/'} component={Login}/>
     </Switch>
 );
 
