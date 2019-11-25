@@ -1,11 +1,14 @@
 import axios from 'axios'
+import { loadStorage } from '../tools/storage'
 
-export const FETCH = (method, endpoint, payload = {}, url = null) => {
+export const FETCH = async (method, endpoint, payload = {}, url = null) => {
   const URL = url || `${process.env.REACT_APP_BASE_URL}${endpoint}`;
-
+  const Authorization = await loadStorage('token') 
   const instance = axios.create({
+
     headers: {
-      'content-type': 'application/json'
+      'content-type': 'application/json',
+      'Authorization': Authorization && `Bearer ${Authorization}`
     }
   });
 

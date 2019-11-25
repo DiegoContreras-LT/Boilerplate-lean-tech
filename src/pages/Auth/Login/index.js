@@ -49,7 +49,6 @@ function Login() {
       >
         Sign in!
       </Button>
-
       <Text className="margin-botton" size={400}>
         Or
       </Text>

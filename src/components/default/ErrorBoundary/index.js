@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {DisplayError} from "../DieplayError";
+import {DisplayError} from "../DisplayError";
 
 class ErrorBoundary extends Component {
 
